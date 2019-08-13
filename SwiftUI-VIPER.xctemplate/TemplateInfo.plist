@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AllowedTypes</key>
+	<array>
+		<string>public.swift-source</string>
+	</array>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>Description</key>
+	<string>A template for a SwiftUI VIPER stack</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAME___.swift</string>
+	<key>SortOrder</key>
+	<integer>0</integer>
+	<key>Template Author</key>
+	<string>Christian Elies @ 2019</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>Name of the VIPER stack</string>
+			<key>Default</key>
+			<string></string>
+			<key>Identifier</key>
+			<string>VIPERSTACKNAME</string>
+			<key>Name</key>
+			<string>VIPER stack name:</string>
+			<key>Required</key>
+			<string>YES</string>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_VIPERSTACKNAME___</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>Add file header comments</string>
+			<key>Default</key>
+			<string>false</string>
+			<key>Identifier</key>
+			<string>FileHeaderComments</string>
+			<key>Name</key>
+			<string>Add file header comments</string>
+			<key>Required</key>
+			<string>YES</string>
+			<key>Type</key>
+			<string>checkbox</string>
+		</dict>
+	</array>
+</dict>
+</plist>
