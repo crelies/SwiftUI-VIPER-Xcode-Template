@@ -10,6 +10,6 @@
 
 import Foundation
 
-protocol ___VARIABLE_VIPERSTACKNAME___DelegateProtocol: class {
+enum ___VARIABLE_VIPERSTACKNAME___DelegateEvent {
 	
 }

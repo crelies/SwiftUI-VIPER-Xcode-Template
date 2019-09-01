@@ -10,7 +10,4 @@
 
 import Foundation
 
-enum ___VARIABLE_VIPERSTACKNAME___Event {
-    case viewDidInit
-    case onAppear
-}
+typealias ___VARIABLE_VIPERSTACKNAME___Delegate = (___VARIABLE_VIPERSTACKNAME___DelegateEvent) -> Void

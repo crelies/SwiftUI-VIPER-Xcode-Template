@@ -5,14 +5,18 @@ protocol ___VARIABLE_VIPERSTACKNAME___ViewProtocol: ___VARIABLE_VIPERSTACKNAME__
 }
 
 struct ___VARIABLE_VIPERSTACKNAME___View: View {
-    @ObservedObject private var presenter = ___VARIABLE_VIPERSTACKNAME___Wireframe.makePresenter()
-    weak var delegate: ___VARIABLE_VIPERSTACKNAME___DelegateProtocol?
+    @ObservedObject private var presenter: ___VARIABLE_VIPERSTACKNAME___Presenter
     
     var body: some View {
         Text("Hello world!")
         .onAppear {
-            self.presenter.didReceiveEvent(.viewAppears)
+            self.presenter.didReceiveEvent(.onAppear)
         }
+    }
+
+    init(delegate: ___VARIABLE_VIPERSTACKNAME___Delegate?) {
+        self.presenter = ___VARIABLE_VIPERSTACKNAME___Wireframe.makePresenter(delegate: delegate)
+        presenter.didReceiveEvent(.viewDidInit)
     }
 }
 
